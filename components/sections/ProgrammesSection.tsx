@@ -103,8 +103,8 @@ function AccordionCard({ programme, index }: { programme: Programme; index: numb
 function ProgrammesTeaser() {
   return (
     <>
-      <Stagger className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-        {programmes.slice(0, 3).map((programme, index) => {
+      <Stagger className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {programmes.map((programme, index) => {
           const Icon = iconMap[programme.icon] ?? Sparkles;
           return (
             <StaggerItem key={programme.id}>

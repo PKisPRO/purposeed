@@ -302,11 +302,11 @@ export const faqs: FAQ[] = [
   },
 ];
 
-export type MiniStat = { value: number; suffix: string; label: string };
+export type TrustPoint = { icon: string; label: string };
 
-export const heroStats: MiniStat[] = [
-  { value: 30, suffix: "+", label: "Ivy League & top global admits" },
-  { value: 500, suffix: "+", label: "Students supported on profile building" },
-  { value: 12, suffix: "", label: "Countries our students now study in" },
-  { value: 15, suffix: "+", label: "Mentors from leading universities" },
+export const trustPoints: TrustPoint[] = [
+  { icon: "graduation-cap", label: "Ivy League & top global admits" },
+  { icon: "gem", label: "Full-ride scholarship experience" },
+  { icon: "users", label: "Mentors from leading universities" },
+  { icon: "globe", label: "Global admissions pathways" },
 ];

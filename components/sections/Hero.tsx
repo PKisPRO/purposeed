@@ -8,14 +8,21 @@ import {
   Compass,
   PenLine,
   Globe2,
+  Users,
 } from "lucide-react";
 import MagneticButton from "@/components/ui/MagneticButton";
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import GradientBlobs from "@/components/ui/GradientBlobs";
 import { CTA } from "@/lib/constants";
-import { heroStats } from "@/lib/data";
+import { trustPoints } from "@/lib/data";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+
+const trustIconMap: Record<string, typeof GraduationCap> = {
+  "graduation-cap": GraduationCap,
+  gem: Gem,
+  users: Users,
+  globe: Globe2,
+};
 
 const floatingBadges = [
   {
@@ -170,18 +177,21 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 z-10 border-t border-cream/10 bg-indigo-dark/40 py-8 backdrop-blur-sm">
-        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-6 text-center sm:px-8 md:grid-cols-4">
-          {heroStats.map((stat) => (
-            <div key={stat.label}>
-              <AnimatedCounter
-                value={stat.value}
-                suffix={stat.suffix}
-                className="font-heading text-3xl font-bold text-coral md:text-4xl"
-              />
-              <p className="mt-1 text-xs text-cream/70 sm:text-sm">{stat.label}</p>
-            </div>
-          ))}
+      <div className="absolute inset-x-0 bottom-0 z-10 border-t border-cream/10 bg-indigo-dark/40 py-6 backdrop-blur-sm">
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-6 sm:px-8 md:grid-cols-4">
+          {trustPoints.map((point) => {
+            const Icon = trustIconMap[point.icon] ?? Sparkles;
+            return (
+              <div key={point.label} className="flex items-center justify-center gap-2.5 sm:justify-start">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-coral/15 text-coral">
+                  <Icon className="h-4 w-4" />
+                </span>
+                <p className="font-heading text-xs font-medium leading-tight text-cream/85 sm:text-sm">
+                  {point.label}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
