@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --color-indigo: #3a2e8c;
+  --color-indigo-dark: #241d5e;
+  --color-coral: #ff6b4a;
+  --color-cream: #fbf6ec;
+  --color-violet: #6b5fd4;
+  --color-gold: #ffb23e;
+}
+
+@theme inline {
+  --color-indigo: var(--color-indigo);
+  --color-indigo-dark: var(--color-indigo-dark);
+  --color-coral: var(--color-coral);
+  --color-cream: var(--color-cream);
+  --color-violet: var(--color-violet);
+  --color-gold: var(--color-gold);
+
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
+  --font-editorial: var(--font-fraunces);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-blob: blob 12s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(1.5deg); }
+}
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -30px) scale(1.08); }
+  66% { transform: translate(-20px, 15px) scale(0.94); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-indigo-dark);
+  font-family: var(--font-body), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+::selection {
+  background: var(--color-coral);
+  color: var(--color-cream);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-violet);
+  border-radius: 999px;
+}
