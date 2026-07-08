@@ -1,4 +1,3 @@
--- Run this once in the Supabase project's SQL Editor (Dashboard → SQL Editor → New query).
 -- Backs both ContactForm and ConsultationForm submissions.
 
 create table if not exists public.leads (
@@ -20,8 +19,16 @@ alter table public.leads enable row level security;
 
 -- The anon key is public (used from the browser), so only allow inserts —
 -- never grant anon a SELECT/UPDATE/DELETE policy, or submissions become publicly readable.
-create policy "Anyone can submit a lead"
-  on public.leads
-  for insert
-  to anon
-  with check (true);
+do $$
+begin
+  if not exists (
+    select 1 from pg_policies
+    where schemaname = 'public' and tablename = 'leads' and policyname = 'Anyone can submit a lead'
+  ) then
+    create policy "Anyone can submit a lead"
+      on public.leads
+      for insert
+      to anon
+      with check (true);
+  end if;
+end $$;
