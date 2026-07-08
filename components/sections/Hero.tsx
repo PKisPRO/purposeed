@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Sparkles,
   GraduationCap,
@@ -77,7 +78,15 @@ const headline = [
   { text: " to Global Universities.", accent: false },
 ];
 
+const heroVideos = ["/videos/hero-1.mp4", "/videos/hero-2.mp4", "/videos/hero-3.mp4", "/videos/hero-4.mp4"];
+
 export default function Hero() {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  function handleVideoEnd() {
+    setCurrentVideoIndex((prev) => (prev + 1) % heroVideos.length);
+  }
+
   return (
     <section id="home" className="relative min-h-screen overflow-hidden bg-indigo">
       {/* Decorative gradient-mesh + dot-grid background, visible behind the video (and as graceful fallback if the video source is missing) */}
@@ -97,19 +106,28 @@ export default function Hero() {
         />
       </div>
 
-      {/* TODO: replace with a licensed/original campus + admissions-journey video (autoplay muted loop, ideally 1920x1080, <15MB) — do not use copyrighted university footage */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/images/hero-poster.jpg"
-        className="absolute inset-0 z-[1] h-full w-full object-cover"
-      >
-        <source src="/videos/purposeed-hero-campus.mp4" type="video/mp4" />
-      </video>
+      <div className="absolute inset-0 z-[1] h-full w-full overflow-hidden">
+        <AnimatePresence mode="sync">
+          <motion.video
+            key={currentVideoIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, ease: EASE }}
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            onEnded={handleVideoEnd}
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src={heroVideos[currentVideoIndex]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </motion.video>
+        </AnimatePresence>
+      </div>
 
-      <div className="absolute inset-0 z-[2] bg-gradient-to-b from-indigo-dark/90 via-indigo/75 to-violet/60" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-br from-[#3A2E8C]/85 via-[#3A2E8C]/65 to-[#6B5FD4]/70" />
 
       {floatingBadges.map(({ icon: Icon, label, position, rotation, float, chip }) => (
         <div
