@@ -4,24 +4,23 @@ export type University = {
   url: string;
 };
 
-// NOTE: Logo files are referenced but not bundled (no verified internet access
-// at build time). Drop official logo files at the paths below — see
-// public/logos/README.md for the exact file list. LogoMarquee renders a clean
-// text fallback automatically until each file is added, so the site never
-// shows a broken image.
+// Logos sourced directly from purposeed's own "Acceptances" deck slide.
 export const universities: University[] = [
-  { name: "Harvard University", logo: "/logos/universities/harvard.svg", url: "https://www.harvard.edu/" },
-  { name: "Cornell University", logo: "/logos/universities/cornell.svg", url: "https://www.cornell.edu/" },
-  { name: "University of Pennsylvania", logo: "/logos/universities/upenn.svg", url: "https://www.upenn.edu/" },
-  { name: "The University of British Columbia", logo: "/logos/universities/ubc.svg", url: "https://www.ubc.ca/" },
-  { name: "University of Toronto", logo: "/logos/universities/toronto.svg", url: "https://www.utoronto.ca/" },
-  { name: "Western University", logo: "/logos/universities/western.svg", url: "https://www.uwo.ca/" },
-  { name: "York University", logo: "/logos/universities/york.svg", url: "https://www.yorku.ca/" },
-  { name: "McGill University", logo: "/logos/universities/mcgill.svg", url: "https://www.mcgill.ca/" },
-  { name: "University of Queensland", logo: "/logos/universities/uq.svg", url: "https://www.uq.edu.au/" },
-  { name: "University of Warwick", logo: "/logos/universities/warwick.svg", url: "https://warwick.ac.uk/" },
-  { name: "Ashoka University", logo: "/logos/universities/ashoka.svg", url: "https://www.ashoka.edu.in/" },
-  { name: "Azim Premji University", logo: "/logos/universities/azim-premji.svg", url: "https://azimpremjiuniversity.edu.in/" },
+  { name: "Harvard University", logo: "/logos/universities/harvard.png", url: "https://www.harvard.edu/" },
+  { name: "University of Pennsylvania", logo: "/logos/universities/upenn.png", url: "https://www.upenn.edu/" },
+  { name: "Cornell University", logo: "/logos/universities/cornell.png", url: "https://www.cornell.edu/" },
+  { name: "The University of British Columbia", logo: "/logos/universities/ubc.png", url: "https://www.ubc.ca/" },
+  { name: "University of Toronto", logo: "/logos/universities/toronto.png", url: "https://www.utoronto.ca/" },
+  { name: "McGill University", logo: "/logos/universities/mcgill.png", url: "https://www.mcgill.ca/" },
+  { name: "York University", logo: "/logos/universities/york.png", url: "https://www.yorku.ca/" },
+  { name: "University of Warwick", logo: "/logos/universities/warwick.png", url: "https://warwick.ac.uk/" },
+  { name: "Western University", logo: "/logos/universities/western.png", url: "https://www.uwo.ca/" },
+  { name: "University of Queensland", logo: "/logos/universities/uq.png", url: "https://www.uq.edu.au/" },
+  { name: "University of Alberta", logo: "/logos/universities/alberta.png", url: "https://www.ualberta.ca/" },
+  { name: "Azim Premji University", logo: "/logos/universities/azim-premji.png", url: "https://azimpremjiuniversity.edu.in/" },
+  { name: "Ashoka University", logo: "/logos/universities/ashoka.png", url: "https://www.ashoka.edu.in/" },
+  { name: "All India Institute of Medical Sciences", logo: "/logos/universities/aiims.png", url: "https://www.aiims.edu/" },
+  { name: "Malaviya National Institute of Technology Jaipur", logo: "/logos/universities/mnit-jaipur.png", url: "https://www.mnit.ac.in/" },
 ];
 
 export type Partner = {
@@ -30,19 +29,26 @@ export type Partner = {
   url: string;
 };
 
+// Logos sourced directly from purposeed's own "Partnerships & Experiences" deck slide.
 export const partners: Partner[] = [
-  { name: "United Nations", logo: "/logos/partners/united-nations.svg", url: "https://www.un.org/" },
-  { name: "Dalberg", logo: "/logos/partners/dalberg.svg", url: "https://dalberg.com/" },
-  { name: "Accenture", logo: "/logos/partners/accenture.svg", url: "https://www.accenture.com/" },
-  { name: "Digital Dx Ventures", logo: "/logos/partners/digital-dx-ventures.svg", url: "https://www.digitaldxventures.com/" },
-  { name: "Lumiere Education", logo: "/logos/partners/lumiere-education.svg", url: "https://www.lumiere-education.com/" },
+  { name: "Lumiere Education", logo: "/logos/partners/lumiere-education.png", url: "https://www.lumiere-education.com/" },
+  { name: "Global Spark", logo: "/logos/partners/global-spark.png", url: "#" },
+  { name: "TiE", logo: "/logos/partners/tie.png", url: "https://tie.org/" },
+  { name: "Digital Dx Ventures", logo: "/logos/partners/digital-dx-ventures.png", url: "https://www.digitaldxventures.com/" },
+  { name: "igniteXL Ventures", logo: "/logos/partners/ignitexl-ventures.png", url: "#" },
+  { name: "United Nations", logo: "/logos/partners/united-nations.png", url: "https://www.un.org/" },
+  { name: "WFUNA", logo: "/logos/partners/wfuna.png", url: "https://wfuna.org/" },
+  { name: "TEDx", logo: "/logos/partners/tedx.png", url: "https://www.ted.com/tedx" },
+  { name: "UNLEASH", logo: "/logos/partners/unleash.png", url: "https://unleash.org/" },
+  { name: "Indian Army", logo: "/logos/partners/indian-army.png", url: "#" },
+  { name: "Government of Haryana", logo: "/logos/partners/govt-haryana.png", url: "https://haryana.gov.in/" },
+  { name: "Government of India", logo: "/logos/partners/govt-india.png", url: "https://www.india.gov.in/" },
+  { name: "Dalberg", logo: "/logos/partners/dalberg.png", url: "https://dalberg.com/" },
+  { name: "Accenture", logo: "/logos/partners/accenture.png", url: "https://www.accenture.com/" },
+  { name: "She's the First", logo: "/logos/partners/shes-the-first.png", url: "https://shesthefirst.org/" },
+  { name: "JIVAM Foundation", logo: "/logos/partners/jivam-foundation.png", url: "#" },
+  { name: "Girl Up", logo: "/logos/partners/girl-up.png", url: "https://girlup.org/" },
   { name: "Nikore Associates", logo: "/logos/partners/nikore-associates.svg", url: "https://www.nikoreassociates.com/" },
-  { name: "JIVAM Foundation", logo: "/logos/partners/jivam-foundation.svg", url: "#" },
-  { name: "Government of Haryana", logo: "/logos/partners/govt-haryana.svg", url: "https://haryana.gov.in/" },
-  { name: "TiE", logo: "/logos/partners/tie.svg", url: "https://tie.org/" },
-  { name: "Global Spark", logo: "/logos/partners/global-spark.svg", url: "#" },
-  { name: "UNLEASH", logo: "/logos/partners/unleash.svg", url: "https://unleash.org/" },
-  { name: "TEDx", logo: "/logos/partners/tedx.svg", url: "https://www.ted.com/tedx" },
 ];
 
 export type Founder = {
@@ -58,21 +64,21 @@ export const founders: Founder[] = [
     name: "Abhijeet Godara",
     role: "Co-Founder, purposeed | UBC Sauder Scholar",
     linkedin: "https://www.linkedin.com/in/abhijeet-godara-1a081320b/?skipRedirect=true",
-    image: "/founders/abhijeet.jpg", // TODO: replace with real founder photo
+    image: "/founders/abhijeet.png",
     bio: "Abhijeet Godara is a sophomore at UBC's Sauder School of Business on a full-ride Karen McKellin International Leader of Tomorrow scholarship. He founded JIVAM Foundation, an NGO bringing libraries and computer access to rural India, and has since mentored students on their own college applications. He is currently a Summer Associate at Lumiere Education and was selected as a Global Talent delegate for UNLEASH's Innovation Lab. At Purposeed, he draws on his own admissions journey to help high schoolers turn their passions into standout applications.",
   },
   {
     name: "Isha Godara",
     role: "Co-Founder, purposeed | Harvard, UPenn & Cornell Admit",
     linkedin: "https://www.linkedin.com/in/ishagodara/",
-    image: "/founders/isha.jpg", // TODO: replace with real founder photo
+    image: "/founders/isha.png",
     bio: "Isha Godara recently earned admission to master's programs at Harvard, UPenn, and Cornell in education, public policy, and entrepreneurship. A University of Alberta graduate and former Consultant at Dalberg, she founded JIVAM Foundation, an NGO running education and nutrition programs for rural children in India, and has mentored dozens of high schoolers through its Impact Fellowship. Her work spans partnerships with She's the First, Terra.do, and policymakers expanding education access. At Purposeed, she helps students see their own potential and craft applications that truly reflect who they are.",
   },
   {
     name: "Michelle Kim-Rissi",
     role: "Strategic Director | Harvard Graduate",
     linkedin: "https://www.linkedin.com/in/michelle-kim-qm0620/",
-    image: "/founders/michelle.jpg", // TODO: replace with real founder photo
+    image: "/founders/michelle.png",
     bio: "Michelle Kim-Rissi is a Harvard graduate and recipient of the Harvard Extension Alumni Association's Emerging Leaders Award. She works in outreach for WFUNA and the United Nations Association in Canada, focusing on climate action and youth advocacy, and was named to Misk Global's Top 20 Under 30 in 2025. As Strategic Director at JIVAM Foundation, she has helped expand education and health programs for young girls in rural India. At Purposeed, she brings this global policy and youth-leadership lens to help students build authentic, purpose-driven applications.",
   },
 ];

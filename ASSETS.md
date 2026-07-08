@@ -1,72 +1,95 @@
 # Media assets
 
-## University logos → `public/logos/universities/`
+## University logos → `public/logos/universities/` — ✅ all real
 
-| File | University | Status |
-|---|---|---|
-| `harvard.svg` | Harvard University | ✅ Real (Wikimedia Commons) |
-| `cornell.svg` | Cornell University | ✅ Real (Wikimedia Commons) |
-| `upenn.svg` | University of Pennsylvania | ✅ Real wordmark (Wikimedia Commons) |
-| `ubc.svg` | The University of British Columbia | ✅ Real coat of arms (Wikimedia Commons, embedded-raster SVG so the file is ~690KB — kept as-is rather than fake a lighter vector) |
-| `york.svg` | York University | ✅ Real (Wikimedia Commons) |
-| `warwick.svg` | University of Warwick | ✅ Real shield (Wikimedia Commons) |
-| `toronto.svg` | University of Toronto | ⬜ Needed — no verified official asset found on Commons (only found Wikipedia-outreach-program logos, which are not the university's own mark) |
-| `western.svg` | Western University | ⬜ Needed — no match found for the Canadian Western University (search only surfaced unrelated US "Western" schools) |
-| `mcgill.svg` | McGill University | ⬜ Needed — only found a generic "Martlet" bird graphic shared across multiple unrelated logos, not confidently McGill's own mark |
-| `uq.svg` | University of Queensland | ⬜ Needed — only found individual residential-college shields, not the university's own logo |
-| `ashoka.svg` | Ashoka University | ⬜ Needed — not present on Wikimedia Commons |
-| `azim-premji.svg` | Azim Premji University | ⬜ Needed — not present on Wikimedia Commons |
+Cropped directly from purposeed's own "Acceptances" deck slide, so these are exactly the
+real assets, not third-party approximations.
 
-For the ⬜ ones: download the official logo from the university's brand/media page (links were provided in chat) and save at the path above. Until then, `LogoMarquee` shows a clean initials badge — never a broken image or a guessed/fake logo.
+| File | University |
+|---|---|
+| `harvard.png` | Harvard University |
+| `upenn.png` | University of Pennsylvania |
+| `cornell.png` | Cornell University |
+| `ubc.png` | The University of British Columbia |
+| `toronto.png` | University of Toronto |
+| `mcgill.png` | McGill University |
+| `york.png` | York University |
+| `warwick.png` | University of Warwick |
+| `western.png` | Western University |
+| `uq.png` | University of Queensland |
+| `alberta.png` | University of Alberta |
+| `azim-premji.png` | Azim Premji University |
+| `ashoka.png` | Ashoka University |
+| `aiims.png` | All India Institute of Medical Sciences |
+| `mnit-jaipur.png` | Malaviya National Institute of Technology Jaipur |
 
-## Partner / organisation logos → `public/logos/partners/`
+`University of Alberta`, `AIIMS`, and `MNIT Jaipur` weren't in the original list — the
+deck's actual acceptances slide has 15 universities, not 12, so `lib/data.ts` was updated
+to match the source of truth.
+
+## Partner / organisation logos → `public/logos/partners/` — ✅ 17 of 18 real
+
+Also cropped directly from purposeed's own "Partnerships & Experiences" deck slide.
+
+| File | Organisation |
+|---|---|
+| `lumiere-education.png` | Lumiere Education |
+| `global-spark.png` | Global Spark |
+| `tie.png` | TiE |
+| `digital-dx-ventures.png` | Digital Dx Ventures |
+| `ignitexl-ventures.png` | igniteXL Ventures |
+| `united-nations.png` | United Nations |
+| `wfuna.png` | WFUNA (World Federation of UN Associations) |
+| `tedx.png` | TEDx |
+| `unleash.png` | UNLEASH |
+| `indian-army.png` | Indian Army |
+| `govt-haryana.png` | Government of Haryana |
+| `govt-india.png` | Government of India |
+| `dalberg.png` | Dalberg |
+| `accenture.png` | Accenture |
+| `shes-the-first.png` | She's the First |
+| `jivam-foundation.png` | JIVAM Foundation |
+| `girl-up.png` | Girl Up |
+
+The deck revealed several partners not in the original list (igniteXL Ventures, WFUNA,
+Indian Army, Government of India, She's the First, Girl Up) — added to `lib/data.ts`.
+It also clarified that the "Government" logo was actually two distinct emblems (Indian
+Army + Govt. of Haryana) plus the national emblem, not one generic mark.
 
 | File | Organisation | Status |
 |---|---|---|
-| `united-nations.svg` | United Nations | ✅ Real (Wikimedia Commons) |
-| `accenture.svg` | Accenture | ✅ Real (Wikimedia Commons) |
-| `govt-haryana.svg` | Government of Haryana | ✅ Real emblem (Wikimedia Commons) |
-| `dalberg.svg` | Dalberg | ⬜ Needed — not on Commons; pull from dalberg.com |
-| `digital-dx-ventures.svg` | Digital Dx Ventures | ⬜ Needed — pull from their site/LinkedIn |
-| `lumiere-education.svg` | Lumiere Education | ⬜ Needed — pull from lumiere-education.com |
-| `nikore-associates.svg` | Nikore Associates | ⬜ Needed — pull from nikoreassociates.com |
-| `jivam-foundation.svg` | JIVAM Foundation | ⬜ Needed — pull from their LinkedIn/give.do page |
-| `tie.svg` | TiE | ⬜ Needed — pull from tie.org |
-| `global-spark.svg` | Global Spark | ⬜ Needed — pull from their site/LinkedIn |
-| `unleash.svg` | UNLEASH | ⬜ Needed — not on Commons; pull from unleash.org |
-| `tedx.svg` | TEDx | ⬜ Needed — only found event-specific TEDx logos (e.g. TEDxPortland) on Commons, not the generic TEDx mark; pull from the official brand guidelines page |
+| `nikore-associates.svg` | Nikore Associates | ⬜ Needed — not shown in the deck; pull from nikoreassociates.com. `LogoMarquee` shows a clean initials badge in the meantime. |
 
-## Founder photos → `public/founders/`
+## Founder photos → `public/founders/` — ✅ all real
 
-| File | Founder | Status |
-|---|---|---|
-| `abhijeet.jpg` | Abhijeet Godara | ⬜ Needed |
-| `isha.jpg` | Isha Godara | ⬜ Needed |
-| `michelle.jpg` | Michelle Kim-Rissi | ⬜ Needed |
+Cropped from purposeed's own "Founders" deck slide.
 
-Until these exist, `FounderSection` falls back to a gradient circle with the founder's initials.
+| File | Founder |
+|---|---|
+| `abhijeet.png` | Abhijeet Godara |
+| `isha.png` | Isha Godara |
+| `michelle.png` | Michelle Kim-Rissi |
 
 ## Hero video playlist → `public/videos/hero-1.mp4` … `hero-4.mp4`
 
-⚠️ Installed, but flagged — `Hero.tsx` plays four local files back-to-back in a loop
-(1→2→3→4→1…), crossfading between them. The four files currently at these paths are
-**unlicensed Shutterstock preview clips with a visible watermark** (Harvard campus
-footage). I fixed the technical problems — two were mislabeled WebM instead of MP4, and
-two were 3018×1572 H.264 at 50+ Mbps (one was 171MB) — and re-encoded all four to a
-consistent 1280p H.264, no audio, ~18MB total. The watermark itself cannot be fixed by
-re-encoding; it's baked into the footage. Shipping these was an explicit, informed
-decision by the site owner after being shown the watermark — swap in properly licensed
-or original footage at the same four paths whenever that's ready, no code changes needed:
+⚠️ Flagged — `Hero.tsx` plays four local files back-to-back in a loop (1→2→3→4→1…),
+crossfading between them. The four files currently at these paths are **unlicensed
+Shutterstock preview clips with a visible watermark** (Harvard campus footage). Technical
+problems were fixed (two were mislabeled WebM instead of MP4, two were 3018×1572 H.264 at
+50+ Mbps totaling 171MB+30MB) and re-encoded to a consistent 1280p H.264, no audio, ~18MB
+total — but the watermark itself is baked into the footage and can't be fixed by
+re-encoding. Shipping these was an explicit, informed decision by the site owner after
+being shown the watermark. Swap in properly licensed or original footage at the same four
+paths whenever that's ready, no code changes needed:
 
 - `public/videos/hero-1.mp4`
 - `public/videos/hero-2.mp4`
 - `public/videos/hero-3.mp4`
 - `public/videos/hero-4.mp4`
 
-There's currently no `poster` image configured for the playlist (the old single-video
-poster was removed along with it) — the section shows the gradient/dot-pattern background
-until the first video loads, which is fine, but if you want a poster, generate one as a
-still frame from `hero-1.mp4` and wire it back into the
+There's currently no `poster` image configured for the playlist — the section shows the
+gradient/dot-pattern background until the first video loads, which is fine, but if you
+want a poster, generate one as a still frame from `hero-1.mp4` and wire it back into the
 `<video>` element in `Hero.tsx`.
 
 ## Real purposeed logo file → `public/logos/purposeed-logo.svg` (optional)

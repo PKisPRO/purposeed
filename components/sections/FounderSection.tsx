@@ -50,7 +50,6 @@ function FounderCard({ founder, variant }: { founder: Founder; variant: "teaser"
             {initials(founder.name)}
           </div>
         ) : (
-          // TODO: replace with real founder photo at founder.image
           <Image
             src={founder.image}
             alt={founder.name}
