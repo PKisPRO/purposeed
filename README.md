@@ -1,6 +1,6 @@
-# purposeedu
+# purposeed
 
-Premium, animated marketing site for purposeedu — an admissions-mentorship edtech
+Premium, animated marketing site for purposeed — an admissions-mentorship edtech
 brand. Built with Next.js (App Router), TypeScript, Tailwind CSS v4, and Framer Motion.
 
 ## Installation

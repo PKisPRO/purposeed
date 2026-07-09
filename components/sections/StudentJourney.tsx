@@ -32,7 +32,7 @@ export default function StudentJourney({ className }: { className?: string }) {
     >
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
-          title="The Purposeedu Pathway"
+          title="The Purposeed Pathway"
           subtitle="A clear, mentor-led journey from self-discovery to standout applications."
           tone="light"
           align="center"

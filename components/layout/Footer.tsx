@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center font-heading text-2xl font-bold">
               <span className="text-cream">purpose</span>
-              <span className="text-coral">edu</span>
+              <span className="text-coral">ed</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/70">
               Helping students build purposeful profiles, authentic applications, and confident
@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-cream/15 pt-8 text-xs text-cream/60 md:flex-row">
-          <p>© {year} purposeedu. All rights reserved.</p>
+          <p>© {year} purposeed. All rights reserved.</p>
           <div className="flex gap-5">
             {/* TODO: replace with real social links */}
             <span className="cursor-default opacity-60">Instagram</span>

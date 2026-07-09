@@ -5,7 +5,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import CTABand from "@/components/sections/CTABand";
 
 export const metadata: Metadata = {
-  title: "Resources | purposeedu",
+  title: "Resources | purposeed",
   description:
     "University trends, admissions checklists, essay guidance, and profile-building resources for students and parents navigating global admissions.",
 };

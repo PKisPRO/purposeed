@@ -1,10 +1,10 @@
 export const SITE = {
-  name: "purposeedu",
+  name: "purposeed",
   tagline: "Your Purpose. Your Profile. Your Path to Global Universities.",
   phone: "+91 95180-87206",
   phoneRaw: "919518087206",
   whatsappUrl: "https://wa.me/919518087206",
-  email: "hello@purposeedu.com", // TODO: replace with live inbox
+  email: "hello@purposeed.com", // TODO: replace with live inbox
 };
 
 export const NAV_LINKS = [

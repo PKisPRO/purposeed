@@ -5,8 +5,8 @@ import ContactForm from "@/components/sections/ContactForm";
 import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact | purposeedu",
-  description: "Get in touch with purposeedu by form, WhatsApp, phone, or email.",
+  title: "Contact | purposeed",
+  description: "Get in touch with purposeed by form, WhatsApp, phone, or email.",
 };
 
 const contactDetails = [
@@ -21,7 +21,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Let's talk about where your child wants to go."
-        subtitle="Reach out with a question, or fill in the form and a purposeedu mentor will get back to you."
+        subtitle="Reach out with a question, or fill in the form and a purposeed mentor will get back to you."
       />
       <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 lg:grid-cols-5">

@@ -6,7 +6,7 @@ import ProgrammesSection from "@/components/sections/ProgrammesSection";
 import CTABand from "@/components/sections/CTABand";
 
 export const metadata: Metadata = {
-  title: "Admissions Counselling | purposeedu",
+  title: "Admissions Counselling | purposeed",
   description:
     "A clear, mentor-led admissions counselling process, from discovering a student's strengths to standing out in front of the world's top universities.",
 };
