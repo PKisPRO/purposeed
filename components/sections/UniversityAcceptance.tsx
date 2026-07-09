@@ -89,7 +89,7 @@ export default function UniversityAcceptance() {
 
         <SectionHeading
           title="Universities Our Students and Mentors Have Been Accepted To"
-          subtitle="From Ivy League campuses to leading Canadian, UK, and Australian universities — here's where the purposeed community has landed."
+          subtitle="From Ivy League campuses to leading Canadian, UK, and Australian universities. Here's where the purposeed community has landed."
           tone="light"
           align="center"
         />

@@ -250,7 +250,7 @@ export default function ProgrammesSection({
           tone="light"
           align="center"
           title="Programmes Built for Ambitious High School Students"
-          subtitle="From profile building and admissions strategy to STEM competitions, case-based learning, study tours, and pre-university readiness — purposeed helps students grow with direction."
+          subtitle="From profile building and admissions strategy to STEM competitions, case-based learning, study tours, and pre-university readiness, purposeed helps students grow with direction."
         />
         {variant === "teaser" ? <ProgrammesTeaser /> : <ProgrammesFull />}
       </div>

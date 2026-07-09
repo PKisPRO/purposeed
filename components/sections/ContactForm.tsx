@@ -57,7 +57,7 @@ export default function ContactForm() {
     });
     setIsSubmitting(false);
     if (error) {
-      setError("Something went wrong sending your message — please try again or reach us on WhatsApp.");
+      setError("Something went wrong sending your message. Please try again or reach us on WhatsApp.");
       return;
     }
     setIsSubmitted(true);
@@ -77,7 +77,7 @@ export default function ContactForm() {
           >
             <CheckCircle2 className="h-14 w-14 text-coral" />
             <p className="font-heading text-lg font-semibold text-indigo-dark">
-              Thanks — we&apos;ll be in touch shortly.
+              Thanks, we&apos;ll be in touch shortly.
             </p>
           </motion.div>
         ) : (

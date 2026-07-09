@@ -111,7 +111,7 @@ export const programmes: Programme[] = [
       {
         heading: "College Application Support",
         content:
-          "We help students shortlist the right universities, often starting with a focused approach around specific programs or locations — Canada, business schools, or other target pathways. From there, we walk through the entire application together: essays, scholarship applications, and everything in between. The goal is simple: a final application that actually sounds like the student and gives them the best shot at standing out.",
+          "We help students shortlist the right universities, often starting with a focused approach around specific programs or locations, Canada, business schools, or other target pathways. From there, we walk through the entire application together: essays, scholarship applications, and everything in between. The goal is simple: a final application that actually sounds like the student and gives them the best shot at standing out.",
       },
     ],
   },
@@ -119,7 +119,7 @@ export const programmes: Programme[] = [
     id: "stem-competitions",
     title: "STEM Competitions",
     shortDescription:
-      "Week-long STEM competitions where students build real skills, then use them to solve a real problem in 48 hours — no coding background needed.",
+      "Week-long STEM competitions where students build real skills, then use them to solve a real problem in 48 hours. No coding background needed.",
     icon: "flask",
     sections: [
       {
@@ -145,7 +145,7 @@ export const programmes: Programme[] = [
     id: "study-immersion-tours",
     title: "Study Immersion Tours",
     shortDescription:
-      "National and international study tours built around what students actually want to study — case studies, faculty time, and real conversations, not sightseeing.",
+      "National and international study tours built around what students actually want to study: case studies, faculty time, and real conversations, not sightseeing.",
     icon: "globe",
     sections: [
       {
@@ -158,7 +158,7 @@ export const programmes: Programme[] = [
     id: "special-workshops",
     title: "Special Workshops",
     shortDescription:
-      "Career talks, university support, pre-university bootcamps, and more — built to fill the gaps school doesn't cover.",
+      "Career talks, university support, pre-university bootcamps, and more, built to fill the gaps school doesn't cover.",
     icon: "sparkles",
     sections: [
       {
@@ -179,7 +179,7 @@ export const programmes: Programme[] = [
       {
         heading: "Also in the Works",
         content:
-          "We're actively developing AI-focused sessions, guided internships, and dedicated support for students in Tier 2 and Tier 3 cities — alongside job search optimisation and short career camps. Reach out if you'd like to be an early cohort.",
+          "We're actively developing AI-focused sessions, guided internships, and dedicated support for students in Tier 2 and Tier 3 cities, alongside job search optimisation and short career camps. Reach out if you'd like to be an early cohort.",
       },
     ],
   },

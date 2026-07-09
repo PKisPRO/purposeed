@@ -22,7 +22,7 @@ export type Lead = {
 
 export async function submitLead(lead: Lead) {
   if (!supabase) {
-    return { error: new Error("Supabase is not configured — see SUPABASE_SETUP.md") };
+    return { error: new Error("Supabase is not configured. See SUPABASE_SETUP.md") };
   }
   const { error } = await supabase.from("leads").insert(lead);
   return { error };

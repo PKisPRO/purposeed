@@ -8,7 +8,7 @@ import CTABand from "@/components/sections/CTABand";
 export const metadata: Metadata = {
   title: "Admissions Counselling | purposeed",
   description:
-    "A clear, mentor-led admissions counselling process — from discovering a student's strengths to standing out in front of the world's top universities.",
+    "A clear, mentor-led admissions counselling process, from discovering a student's strengths to standing out in front of the world's top universities.",
 };
 
 export default function AdmissionsCounsellingPage() {
@@ -17,7 +17,7 @@ export default function AdmissionsCounsellingPage() {
       <PageHeader
         eyebrow="Admissions Counselling"
         title="A process built around the student, not a template."
-        subtitle="Profile building, university shortlisting, essays, and scholarship strategy — guided by mentors who've been admitted to the universities your child is aiming for."
+        subtitle="Profile building, university shortlisting, essays, and scholarship strategy, guided by mentors who've been admitted to the universities your child is aiming for."
       />
       <StudentJourney />
       <ProgrammesSection variant="teaser" />

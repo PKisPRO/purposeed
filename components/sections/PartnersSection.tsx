@@ -10,7 +10,7 @@ export default function PartnersSection() {
       <div className="relative z-10 mx-auto max-w-5xl px-6">
         <SectionHeading
           title="Organisations Our Team Has Worked With"
-          subtitle="Our mentors' experience spans global institutions, policy, and impact-driven organisations — the same rigor they bring to every student's profile."
+          subtitle="Our mentors' experience spans global institutions, policy, and impact-driven organisations. The same rigor they bring to every student's profile."
           tone="dark"
           align="center"
         />

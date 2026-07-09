@@ -127,7 +127,7 @@ export default function FounderSection({ variant = "teaser" }: { variant?: "teas
           align="center"
           tone="light"
           title="Learn From Those Who Have Been There"
-          subtitle="Our mentors have lived the journey — from building authentic profiles to earning offers from leading universities around the world."
+          subtitle="Our mentors have lived the journey, from building authentic profiles to earning offers from leading universities around the world."
         />
 
         <Stagger className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">

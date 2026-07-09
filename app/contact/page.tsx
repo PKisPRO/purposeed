@@ -6,7 +6,7 @@ import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact | purposeed",
-  description: "Get in touch with purposeed — by form, WhatsApp, phone, or email.",
+  description: "Get in touch with purposeed by form, WhatsApp, phone, or email.",
 };
 
 const contactDetails = [
