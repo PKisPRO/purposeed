@@ -37,9 +37,9 @@ export default function Header() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-        <Link href="/" className="flex items-center gap-1 font-heading text-2xl font-bold tracking-tight">
+        <Link href="/" className="flex items-center font-heading text-2xl font-bold tracking-tight">
           <span className={solid ? "text-indigo" : "text-cream"}>purpose</span>
-          <span className="text-coral">ed</span>
+          <span className="text-coral">edu</span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

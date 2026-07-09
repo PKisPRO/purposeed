@@ -2,7 +2,7 @@
 
 ## University logos → `public/logos/universities/` — ✅ all real
 
-Cropped directly from purposeed's own "Acceptances" deck slide, so these are exactly the
+Cropped directly from purposeedu's own "Acceptances" deck slide, so these are exactly the
 real assets, not third-party approximations.
 
 | File | University |
@@ -29,7 +29,7 @@ to match the source of truth.
 
 ## Partner / organisation logos → `public/logos/partners/` — ✅ 17 of 18 real
 
-Also cropped directly from purposeed's own "Partnerships & Experiences" deck slide.
+Also cropped directly from purposeedu's own "Partnerships & Experiences" deck slide.
 
 | File | Organisation |
 |---|---|
@@ -62,7 +62,7 @@ Army + Govt. of Haryana) plus the national emblem, not one generic mark.
 
 ## Founder photos → `public/founders/` — ✅ all real
 
-Cropped from purposeed's own "Founders" deck slide.
+Cropped from purposeedu's own "Founders" deck slide.
 
 | File | Founder |
 |---|---|
@@ -92,7 +92,7 @@ gradient/dot-pattern background until the first video loads, which is fine, but 
 want a poster, generate one as a still frame from `hero-1.mp4` and wire it back into the
 `<video>` element in `Hero.tsx`.
 
-## Real purposeed logo file → `public/logos/purposeed-logo.svg` (optional)
+## Real purposeedu logo file → `public/logos/purposeedu-logo.svg` (optional)
 
 Confirmed against the Branding Kit PDF: the real logo is a pure wordmark — "purpose" in
 cream, "ed" in coral, Poppins bold, lowercase, normally set on an indigo background —

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ConsultationForm from "@/components/sections/ConsultationForm";
 
 export const metadata: Metadata = {
-  title: "Book a Consultation | purposeed",
+  title: "Book a Consultation | purposeedu",
   description:
-    "Schedule a meeting with a purposeed admissions mentor and get a clear next step for your child's global university journey.",
+    "Schedule a meeting with a purposeedu admissions mentor and get a clear next step for your child's global university journey.",
 };
 
 export default function BookConsultationPage() {

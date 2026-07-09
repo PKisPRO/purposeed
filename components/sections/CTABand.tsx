@@ -7,7 +7,7 @@ import { CTA } from "@/lib/constants";
 
 export default function CTABand({
   title = "Ready to Build a Profile Top Universities Remember?",
-  subtitle = "Book a free introductory call with a purposeed mentor and get a clear next step for your child's admissions journey.",
+  subtitle = "Book a free introductory call with a purposeedu mentor and get a clear next step for your child's admissions journey.",
   primaryLabel = "Book a Consultation",
   primaryHref = "/book-consultation",
 }: {

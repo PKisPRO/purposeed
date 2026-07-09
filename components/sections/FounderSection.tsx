@@ -146,7 +146,7 @@ export default function FounderSection({ variant = "teaser" }: { variant?: "teas
           </div>
         ) : (
           <p className="mt-14 text-center font-editorial text-lg italic text-indigo/70">
-            Every mentor at purposeed has been on the other side of the admissions table.
+            Every mentor at purposeedu has been on the other side of the admissions table.
           </p>
         )}
       </div>

@@ -21,7 +21,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="Student Stories Coming Soon"
-          subtitle="We're collecting the first cohort of purposeed stories. Real journeys, real outcomes, coming soon."
+          subtitle="We're collecting the first cohort of purposeedu stories. Real journeys, real outcomes, coming soon."
           tone="light"
           align="center"
         />

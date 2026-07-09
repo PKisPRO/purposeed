@@ -77,7 +77,7 @@ export default function ConsultationForm() {
     <div className="max-w-3xl mx-auto px-4 py-16 md:py-24">
       <SectionHeading
         title="Your Journey to Global University Admissions Starts Here."
-        subtitle="Schedule a meeting with a purposeed admissions mentor."
+        subtitle="Schedule a meeting with a purposeedu admissions mentor."
         tone="light"
         align="center"
         className="mb-10"
@@ -294,7 +294,7 @@ export default function ConsultationForm() {
       <div className="mt-6 flex items-center justify-center gap-2 text-center text-sm text-indigo-dark/60">
         <ShieldCheck className="h-4 w-4 shrink-0" />
         <p>
-          A mentor from purposeed will get in touch to understand the student&apos;s goals and
+          A mentor from purposeedu will get in touch to understand the student&apos;s goals and
           recommend the right pathway.
         </p>
       </div>

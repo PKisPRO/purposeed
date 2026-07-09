@@ -4,7 +4,7 @@ import ProgrammesSection from "@/components/sections/ProgrammesSection";
 import CTABand from "@/components/sections/CTABand";
 
 export const metadata: Metadata = {
-  title: "Programmes | purposeed",
+  title: "Programmes | purposeedu",
   description:
     "Profile building, STEM competitions, case-based learning, study immersion tours, and special workshops built for ambitious high school students.",
 };
@@ -15,7 +15,7 @@ export default function ProgrammesPage() {
       <PageHeader
         eyebrow="Programmes"
         title="Built for students who want to grow with direction."
-        subtitle="Every purposeed programme ties back to the same goal: a student who knows their strengths and can show them clearly, on paper and in person."
+        subtitle="Every purposeedu programme ties back to the same goal: a student who knows their strengths and can show them clearly, on paper and in person."
       />
       <ProgrammesSection variant="full" />
       <CTABand

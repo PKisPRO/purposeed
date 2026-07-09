@@ -24,9 +24,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "purposeed | Purpose-Driven Admissions Mentorship",
+  title: "purposeedu | Purpose-Driven Admissions Mentorship",
   description:
-    "purposeed helps high school students discover their strengths, build meaningful profiles, and craft authentic applications for top universities across the world.",
+    "purposeedu helps high school students discover their strengths, build meaningful profiles, and craft authentic applications for top universities across the world.",
 };
 
 export default function RootLayout({
