@@ -145,18 +145,6 @@ export default function Hero() {
 
       <div className="relative z-10 flex min-h-screen flex-col justify-center px-6 pb-40 pt-32 sm:px-8 md:pb-48">
         <div className="mx-auto max-w-4xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0, ease: EASE }}
-            className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-cream/10 px-4 py-2 text-xs backdrop-blur-md sm:text-sm"
-          >
-            <Sparkles className="h-4 w-4 text-gold" />
-            <span className="text-cream/80">
-              For students in Grades 8–12 exploring global universities, profile building, scholarships, and future-ready careers.
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
