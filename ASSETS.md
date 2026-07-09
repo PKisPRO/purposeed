@@ -70,27 +70,17 @@ Cropped from purposeed's own "Founders" deck slide.
 | `isha.png` | Isha Godara |
 | `michelle.png` | Michelle Kim-Rissi |
 
-## Hero video playlist → `public/videos/hero-1.mp4` … `hero-4.mp4`
+## Hero background video → `public/videos/hero.mp4`
 
-⚠️ Flagged — `Hero.tsx` plays four local files back-to-back in a loop (1→2→3→4→1…),
-crossfading between them. The four files currently at these paths are **unlicensed
-Shutterstock preview clips with a visible watermark** (Harvard campus footage). Technical
-problems were fixed (two were mislabeled WebM instead of MP4, two were 3018×1572 H.264 at
-50+ Mbps totaling 171MB+30MB) and re-encoded to a consistent 1280p H.264, no audio, ~18MB
-total — but the watermark itself is baked into the footage and can't be fixed by
-re-encoding. Shipping these was an explicit, informed decision by the site owner after
-being shown the watermark. Swap in properly licensed or original footage at the same four
-paths whenever that's ready, no code changes needed:
+Replaces the old four-clip watermarked-stock-footage playlist. `Hero.tsx` now plays a
+single local file on native `loop`. Source was a 364MB/57s screen recording (H.264,
+3024×1564) — too large to commit (GitHub rejects files over 100MB) and too heavy for a
+hero background regardless, so it was re-encoded with ffmpeg to exactly 55 seconds,
+1920×994, 30fps, ~22MB, no audio track.
 
-- `public/videos/hero-1.mp4`
-- `public/videos/hero-2.mp4`
-- `public/videos/hero-3.mp4`
-- `public/videos/hero-4.mp4`
-
-There's currently no `poster` image configured for the playlist — the section shows the
-gradient/dot-pattern background until the first video loads, which is fine, but if you
-want a poster, generate one as a still frame from `hero-1.mp4` and wire it back into the
-`<video>` element in `Hero.tsx`.
+There's currently no `poster` image configured — the section shows the gradient/dot-pattern
+background until the video loads, which is fine, but if you want a poster, generate one as
+a still frame from `hero.mp4` and wire it back into the `<video>` element in `Hero.tsx`.
 
 ## Real purposeed logo file → `public/logos/purposeed-logo.svg` (optional)
 
