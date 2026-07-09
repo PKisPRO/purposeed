@@ -158,15 +158,6 @@ export default function Hero() {
             ))}
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.24, ease: EASE }}
-            className="mx-auto mt-6 max-w-2xl text-lg text-cream/85 md:text-xl"
-          >
-            We help high school students discover their strengths, build meaningful profiles, and craft authentic applications for top universities across the world.
-          </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
